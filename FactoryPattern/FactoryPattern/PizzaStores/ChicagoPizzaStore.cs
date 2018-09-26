@@ -7,12 +7,20 @@ using FactoryPattern.Pizzas;
 
 namespace FactoryPattern.PizzaStores
 {
+	/// <summary>
+	/// Concerete creator class
+	/// </summary>
 	class ChicagoPizzaStore : PizzaStore
 	{
 		public ChicagoPizzaStore() : base()
 		{
 		}
 
+		/// <summary>
+		/// Low level concrete pizza factory method.
+		/// </summary>
+		/// <param name="type">Type of pizza</param>
+		/// <returns>Concrete Chicago Style pizza</returns>
 		public override Pizza CreatePizza(string type)
 		{
 			Pizza pizza = null;

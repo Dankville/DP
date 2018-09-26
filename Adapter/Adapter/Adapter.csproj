@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{01DB3EA7-CF43-421E-91DC-2AFD58B3DCFF}</ProjectGuid>
+    <ProjectGuid>{F5FBA04D-0B49-4083-8506-D7A28752ED9B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FactoryPattern</RootNamespace>
-    <AssemblyName>FactoryPattern</AssemblyName>
+    <RootNamespace>Adapter</RootNamespace>
+    <AssemblyName>Adapter</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,29 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ingredients\Abstracts\Cheese.cs" />
-    <Compile Include="Ingredients\Abstracts\Clams.cs" />
-    <Compile Include="Ingredients\Abstracts\Dough.cs" />
-    <Compile Include="Ingredients\Abstracts\Pepperoni.cs" />
-    <Compile Include="Ingredients\Abstracts\Sauce.cs" />
-    <Compile Include="Ingredients\Abstracts\Veggies.cs" />
-    <Compile Include="PizzaIngredientFactories\ChicagoIngredientFactory.cs" />
-    <Compile Include="PizzaIngredientFactories\NYPizzaIngredientFactory.cs" />
-    <Compile Include="PizzaIngredientFactories\PizzaIngredientFactory.cs" />
-    <Compile Include="PizzaStores\CaliforniaPizzaStore.cs" />
-    <Compile Include="PizzaStores\ChicagoPizzaStore.cs" />
-    <Compile Include="PizzaStores\NYPizzaStore.cs" />
-    <Compile Include="PizzaStores\PizzaStore.cs" />
-    <Compile Include="Pizzas\CaliforniaPizzas.cs" />
-    <Compile Include="Pizzas\ChicagoPizzas.cs" />
-    <Compile Include="Pizzas\NYPizzas.cs" />
-    <Compile Include="Pizzas\Pizza.cs" />
+    <Compile Include="Ducks\Duck.cs" />
+    <Compile Include="Ducks\DuckAdapter.cs" />
+    <Compile Include="Ducks\MallardDuck.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Turkies\Turkey.cs" />
+    <Compile Include="Turkies\TurkeyAdapter.cs" />
+    <Compile Include="Turkies\WildTurkey.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

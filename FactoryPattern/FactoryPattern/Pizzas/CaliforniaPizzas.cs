@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace FactoryPattern.Pizzas
 {
+	/// <summary>
+	/// Abstract Product Class
+	/// </summary>
 	class CaliforniaCheesePizza : Pizza
 	{
 

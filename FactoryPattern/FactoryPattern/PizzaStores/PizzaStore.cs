@@ -7,6 +7,9 @@ using FactoryPattern.Pizzas;
 
 namespace FactoryPattern.PizzaStores
 {
+	/// <summary>
+	/// Abstract creator class
+	/// </summary>
 	public abstract class PizzaStore
 	{
 
@@ -24,6 +27,12 @@ namespace FactoryPattern.PizzaStores
 			return pizza;
 		}
 
+
+		/// <summary>
+		/// High level Abstract pizza Facory Method
+		/// </summary>
+		/// <param name="type">Type of pizza</param>
+		/// <returns> Abstract pizza </returns>
 		public abstract Pizza CreatePizza(string type);
 	}
 }
